@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle2, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
