@@ -37,11 +37,10 @@ export function Entruempelung() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative flex justify-center group h-full"
         >
-          <div className="absolute inset-0 bg-blue-500/10 blur-[80px] rounded-3xl"></div>
           <div className="relative w-full aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl transition-all duration-700 ease-out group-hover:scale-[1.02] hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
             <div className="absolute inset-0 bg-slate-900/10 z-10 transition-opacity duration-500 group-hover:opacity-0 pointer-events-none"></div>
             <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+              src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop" 
               alt="Entrümpelung und saubere Räume" 
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               referrerPolicy="no-referrer"
@@ -61,7 +60,7 @@ export function Entruempelung() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className="group relative p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-slate-200 overflow-hidden card-hover-effect"
+              className="group relative p-6 bg-white rounded-2xl border border-slate-200 overflow-hidden card-hover-effect"
             >
               <div className="absolute inset-0 dotted-bg opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
               <div className="relative z-10 flex items-start gap-4">
@@ -80,7 +79,7 @@ export function Entruempelung() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="bg-slate-50/80 backdrop-blur-md rounded-3xl p-10 border border-slate-200 mb-12 relative overflow-hidden"
+        className="bg-slate-50 rounded-3xl p-10 border border-slate-200 mb-12 relative overflow-hidden"
       >
         <div className="absolute top-0 left-0 w-full h-full grid-bg opacity-30 pointer-events-none"></div>
         <div className="relative z-10">
