@@ -41,7 +41,7 @@ export function Galabau() {
           <div className="relative w-full aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl transition-all duration-700 ease-out group-hover:scale-[1.02] hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
             <div className="absolute inset-0 bg-slate-900/10 z-10 transition-opacity duration-500 group-hover:opacity-0 pointer-events-none"></div>
             <img 
-              src="https://images.unsplash.com/photo-1558904541-efa843a96f09?q=80&w=1200&auto=format&fit=crop" 
+              src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop" 
               alt="Garten- und Landschaftsbau" 
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               referrerPolicy="no-referrer"
