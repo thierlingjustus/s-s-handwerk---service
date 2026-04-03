@@ -53,15 +53,27 @@ export function Reinigung() {
       {/* Sub-services Grid */}
       <div className="mb-24">
         <h2 className="text-2xl font-bold text-slate-900 mb-8">Unsere Leistungen im Detail</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { staggerChildren: 0.1 }
+            }
+          }}
+        >
           {subServices.map((service, idx) => (
             <motion.div 
               key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className="group relative p-6 bg-white rounded-2xl border border-slate-200 overflow-hidden card-hover-effect"
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } }
+              }}
+              className="group relative p-6 bg-white rounded-2xl border border-slate-200 overflow-hidden card-hover-effect will-change-transform"
             >
               <div className="absolute inset-0 dotted-bg opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
               <div className="relative z-10 flex items-start gap-4">
@@ -72,7 +84,7 @@ export function Reinigung() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
       {/* Trust Signals */}
