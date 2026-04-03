@@ -1,13 +1,14 @@
 import { ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export function Datenschutz() {
+  const navigate = useNavigate();
   return (
     <div className="pt-32 pb-20 px-6 max-w-4xl mx-auto relative z-10 min-h-screen">
-      <Link to="/" className="inline-flex items-center text-sm font-medium text-slate-500 hover:text-[#1a4a7c] mb-12 transition-colors">
+      <button onClick={() => navigate(-1)} className="inline-flex items-center text-sm font-medium text-slate-500 hover:text-[#1a4a7c] mb-12 transition-colors">
         <ArrowLeft className="w-4 h-4 mr-2" />
         Zurück zur Übersicht
-      </Link>
+      </button>
 
       <h1 className="text-4xl font-bold text-slate-900 mb-8">Datenschutzerklärung</h1>
 
