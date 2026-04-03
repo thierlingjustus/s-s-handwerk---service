@@ -36,14 +36,14 @@ export function Reinigung() {
           initial={{ opacity: 0, x: 20 }} 
           animate={{ opacity: 1, x: 0 }} 
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative flex justify-center group h-full"
+          className="relative flex justify-center lg:justify-end group h-full"
         >
-          <div className="relative w-full aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl transition-all duration-700 ease-out group-hover:scale-[1.02] hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
+          <div className="relative w-full max-w-[360px] md:max-w-md aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-8 border-white transition-all duration-700 ease-out group-hover:scale-[1.02] hover:shadow-[0_30px_60px_rgba(0,0,0,0.15)]">
             <div className="absolute inset-0 bg-slate-900/10 z-10 transition-opacity duration-500 group-hover:opacity-0 pointer-events-none"></div>
             <img 
-              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop" 
+              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=90&w=1600&auto=format&fit=crop" 
               alt="Reinigungs-Service und Sauberkeit" 
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               referrerPolicy="no-referrer"
             />
           </div>
